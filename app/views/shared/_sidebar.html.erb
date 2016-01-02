@@ -4,12 +4,11 @@
     <li class="section-name">
       <a href="javascript:void(0)" class="js-accordion-trigger"><%= section.name %></a>
       <ul class="submenu">
-        <li>
-          <a href="javascript:void(0)">Sub Item 1</a>
-        </li>
-        <li>
-          <a href="javascript:void(0)">Sub Item 2</a>
-        </li>
+        <% section.sub_sections.each do |sub_section| %>
+          <li>
+          <a href="javascript:void(0)"><%= sub_section.name %></a>
+          </li>
+        <% end %>
       </ul>
     </li>
   <% end %>

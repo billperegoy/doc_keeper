@@ -1,17 +1,18 @@
-<h1>Create new subsection</h1>
-
-<%= form_for([@section, @sub_section]) do |f| %>
-  <%= f.label :name %>:
-  <%= f.text_field :name %><br />
-
-  <%= f.submit %>
-<% end %>
-
-<% if @sub_section.errors.any? %>
-<ul>
-  <% @sub_section.errors.full_messages.each do |msg| %>
-    <li><%= msg %></li>
+<div class="new-section">
+  <h1>Create new subsection</h1>
+  
+  <%= form_for([@section, @sub_section]) do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %><br />
+  
+    <%= f.submit %>
   <% end %>
-</ul>
-<% end %>
-
+  
+  <% if @sub_section.errors.any? %>
+  <ul>
+    <% @sub_section.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+  <% end %>
+</div>
