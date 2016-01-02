@@ -7,4 +7,3 @@ $(document).ready ->
     jQuery(this).parent().toggleClass 'is-expanded'
     e.preventDefault()
     return
-

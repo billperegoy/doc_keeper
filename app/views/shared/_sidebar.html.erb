@@ -1,0 +1,17 @@
+<aside>
+  <ul class="accordion">
+  <% @sections.each do |section| %>
+    <li class="section-name">
+      <a href="javascript:void(0)" class="js-accordion-trigger"><%= section.name %></a>
+      <ul class="submenu">
+        <li>
+          <a href="javascript:void(0)">Sub Item 1</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">Sub Item 2</a>
+        </li>
+      </ul>
+    </li>
+  <% end %>
+  </ul>
+</aside>

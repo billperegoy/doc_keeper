@@ -1,0 +1,13 @@
+.container {
+
+  header {
+    @include span-columns(12);
+  }
+  aside {
+    @include span-columns(3);
+  }
+
+  .main-content {
+    @include span-columns(9);
+  }
+}
